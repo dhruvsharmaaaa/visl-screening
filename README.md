@@ -66,30 +66,33 @@ Each candidate is scored on a 100-point scale using three weighted components:
 
 
 ## Recruitment Pipeline
-Upload Candidate CSV
-        ↓
-Enter Job Description
-        ↓
-Download & Process Resumes
-(PDF extraction via PyMuPDF)
-        ↓
-AI Evaluation
-(Claude API scores resume + GitHub)
-        ↓
-Score & Rank Candidates
-(weighted formula)
-        ↓
-Shortlist Above Threshold
-        ↓
-Send Test Links via Email
-(SendGrid)
-        ↓
-Upload Test Results CSV
-        ↓
-Schedule Interviews
-(Google Calendar + Meet auto-generated)
-        ↓
-Send Interview Invitations to Candidates
+```
+  1. Upload Candidate CSV
+          ↓
+  2. Enter Job Description
+          ↓
+  3. Download & Process Resumes
+     (PDF extraction via PyMuPDF)
+          ↓
+  4. AI Evaluation
+     (Claude API scores resume + GitHub)
+          ↓
+  5. Score & Rank Candidates
+     (weighted formula)
+          ↓
+  6. Shortlist Above Threshold
+          ↓
+  7. Send Test Links via Email
+     (SendGrid)
+          ↓
+  8. Upload Test Results CSV
+          ↓
+  9. Schedule Interviews
+     (Google Calendar + Meet auto-generated)
+          ↓
+ 10. Send Interview Invitations to Candidates
+```
+
 
 
 ## Setup Instructions
