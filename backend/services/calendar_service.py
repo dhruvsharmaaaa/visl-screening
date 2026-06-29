@@ -3,13 +3,16 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from datetime import datetime, timedelta
-import uuid, os, pickle
+import uuid, os, pickle, base64
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def get_google_credentials():
     creds = None
-    if os.path.exists('token.pickle'):
+    token_b64 = os.getenv('GOOGLE_TOKEN_BASE64')
+    if token_b64:
+        creds = pickle.loads(base64.b64decode(token_b64))
+    elif os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as f:
             creds = pickle.load(f)
     if not creds or not creds.valid:
