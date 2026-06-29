@@ -12,7 +12,8 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
 ## System Architecture
 <div align="center">
 
-┌─────────────────────────────────────┐
+```
+                    ┌─────────────────────────────────────┐
                     │       React Frontend (Vercel)        │
                     │  CSV Upload → JD Input → Pipeline   │
                     │       → Candidate Dashboard          │
@@ -52,6 +53,7 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
               │  GitHub API   │  │ SendGrid │
               │               │  │  Email   │
               └───────────────┘  └──────────┘
+```
               </div>
 
     
