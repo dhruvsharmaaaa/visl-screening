@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+supabase
+python-dotenv
+pandas
+requests
+pymupdf
+anthropic
+sendgrid
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+python-multipart
