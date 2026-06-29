@@ -62,13 +62,14 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
 
 ## AI Evaluation Approach
 Each candidate is scored on a 100-point scale using three weighted components:
-```
+
 | Component | Weight | Description |
 |---|---|---|
 | AI Resume Score | 50% | Claude evaluates resume against JD across 4 dimensions |
 | GitHub Score | 30% | Top 5 repos analyzed for AI/ML presence, stars, activity |
 | Academic Score | 20% | CGPA normalized to 0–100 scale |
-```
+
+
 
 
 
