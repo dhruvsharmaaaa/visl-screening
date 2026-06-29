@@ -3,7 +3,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from datetime import datetime, timedelta
-import uuid, os, pickle, base64
+import uuid, os, pickle, base64, json
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
@@ -15,14 +15,18 @@ def get_google_credentials():
     elif os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as f:
             creds = pickle.load(f)
+    if creds and creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        return creds
     if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
+        creds_json = os.getenv('GOOGLE_CREDENTIALS_JSON')
+        if creds_json:
+            with open('/tmp/credentials.json', 'w') as f:
+                f.write(creds_json)
+            flow = InstalledAppFlow.from_client_secrets_file('/tmp/credentials.json', SCOPES)
         else:
             flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        with open('token.pickle', 'wb') as f:
-            pickle.dump(creds, f)
+        creds = flow.run_local_server(port=0)
     return creds
 
 def schedule_interview(candidate_email: str, candidate_name: str, slot_offset_hours: int = 0):
