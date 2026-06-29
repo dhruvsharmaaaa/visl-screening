@@ -9,7 +9,7 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
 - Email: SendGrid
 - Calendar: Google Calendar API + Meet
   
-# System Architecture
+## System Architecture
 
 ┌─────────────────────────────────────────────────────────┐
 │              React Frontend (Vercel)                    │
@@ -42,7 +42,7 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
     └────────┘    └────────┘
     
 
-# AI Evaluation Approach
+## AI Evaluation Approach
 Each candidate is scored on a 100-point scale using three weighted components:
 
 
