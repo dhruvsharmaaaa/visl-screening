@@ -10,6 +10,7 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
 - Calendar: Google Calendar API + Meet
   
 ## System Architecture
+<div align="center">
 
 ┌─────────────────────────────────────┐
                     │       React Frontend (Vercel)        │
@@ -51,6 +52,8 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
               │  GitHub API   │  │ SendGrid │
               │               │  │  Email   │
               └───────────────┘  └──────────┘
+              </div>
+
     
 
 ## AI Evaluation Approach
