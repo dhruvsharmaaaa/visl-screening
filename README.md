@@ -54,7 +54,9 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
               │               │  │  Email   │
               └───────────────┘  └──────────┘
 ```
-              </div>
+ </div>           
+              
+            
 
     
 
