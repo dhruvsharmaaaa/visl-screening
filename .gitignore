@@ -1,0 +1,12 @@
+backend/.env
+backend/token.pickle
+backend/credentials.json
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+frontend/node_modules/
+.DS_Store
+backend/credentials.json
+backend/token.pickle
+frontend/.env
+frontend/{
