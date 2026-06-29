@@ -40,8 +40,9 @@ Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub anal
     │ GitHub │    │SendGrid│
     │  API   │    │ Email  │
     └────────┘    └────────┘
+    
 
-## AI Evaluation Approach
+# AI Evaluation Approach
 Each candidate is scored on a 100-point scale using three weighted components:
 
 
