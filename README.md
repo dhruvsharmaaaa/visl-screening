@@ -1,9 +1,13 @@
 # VISL Screening — AI-Powered Screening Platform
 Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub analysis, test dispatch, and interview scheduling — all in one pipeline.
 
-# Live App: 
+## Live App: 
 - Frontend: https://visl-screening.vercel.app
 - Backend API: https://visl-screening-backend.onrender.com
+
+## Dashboard Preview
+<img width="1430" height="820" alt="image" src="https://github.com/user-attachments/assets/f4e76518-6c38-4e97-810e-93483f9ea8bd" />
+<img width="1430" height="816" alt="image" src="https://github.com/user-attachments/assets/776cf529-bd1f-4c6f-96c4-12f1772f6091" />
 
 ## Tech Stack
 - Backend: FastAPI + Python
