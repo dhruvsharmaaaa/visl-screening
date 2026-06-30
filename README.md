@@ -1,5 +1,5 @@
 # VISL Screening — AI-Powered Screening Platform
-Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub analysis, test dispatch, and interview scheduling — all in one pipeline.
+This is an end-to-end AI recruitment platform. It automates the entire candidate screening workflow — from bulk CSV upload and resume parsing, through Claude-powered AI evaluation and GitHub profile analysis, to automated assessment dispatch and interview scheduling with Google Meet. Recruiters get a single dashboard to upload candidates, define job requirements and get a ranked shortlist in minutes instead of hours of manual review.
 
 ## Live App: 
 - Frontend: https://visl-screening.vercel.app
