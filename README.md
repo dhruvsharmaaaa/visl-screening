@@ -2,8 +2,8 @@
 Automate candidate screening end-to-end: resume parsing, AI scoring, GitHub analysis, test dispatch, and interview scheduling — all in one pipeline.
 
 # Live App: 
-Frontend: https://visl-screening.vercel.app
-Backend API: https://visl-screening-backend.onrender.com
+- Frontend: https://visl-screening.vercel.app
+- Backend API: https://visl-screening-backend.onrender.com
 
 ## Tech Stack
 - Backend: FastAPI + Python
